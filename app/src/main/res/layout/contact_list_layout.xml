@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Agenda de Contato"
+        android:textColor="#363739"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:width="350dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textColor="#323030" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:width="350dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="text"
+        android:textColor="#302F2F" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:width="350dp"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="10dp"
+        android:drawableTint="#898989"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColor="#323131" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="300dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Salvar"
+        app:cornerRadius="10dp"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconGravity="textEnd"
+        app:iconPadding="5dp"
+        app:iconTint="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lstContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
